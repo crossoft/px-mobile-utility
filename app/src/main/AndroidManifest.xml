@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dharmaniz.posmobileutilityapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".PostMobileUtilityApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PostMobileBaseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.InventoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.MetricsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TimeKeeping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SalesProductActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.InventoryHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SetUpIneventoryActivity"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".Activity.CurrentQuantityInventoryActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".Activity.RecoderInventoryActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".Activity.locationInventoryActivity"
+            android:screenOrientation="portrait"
+          />
+        <activity
+            android:name=".Activity.InstructionInventoryActivity"
+            android:screenOrientation="portrait"
+          />
+        <activity
+            android:name=".Activity.SaleProductHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.SaleProductInformationActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".Activity.SaleproductReceipeActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Activity.ShowDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.informationShowdetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.InstructionShowDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.ShowLocationDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.ShowSetupdetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.ShowRecorderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Activity.ShowSaleProductRecipedetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+    </application>
+
+</manifest>

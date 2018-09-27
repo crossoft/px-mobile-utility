@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mailLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            android:id="@+id/metricNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:gravity="left"
+
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            android:id="@+id/matrixValueTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:gravity="right"
+
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+</LinearLayout>

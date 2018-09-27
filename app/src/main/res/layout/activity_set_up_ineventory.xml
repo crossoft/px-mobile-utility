@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary">
+
+
+        <com.example.dharmaniz.posmobileutilityapp.fonts.MediumCustomTextView
+            android:textColor="@color/white"
+            android:text="Inventory Product Setup"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tittleTV"/>
+
+        <RelativeLayout
+            android:id="@+id/backRL"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/backTV"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:background="@drawable/back_icon"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/homeRL"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/homeTV"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:background="@drawable/home_icon"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Search Layout-->
+        <LinearLayout
+
+            android:id="@+id/mainNormalLL"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/search_fill_box"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center"
+                android:layout_weight=".4"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+
+
+                <EditText
+                    android:id="@+id/editSearchET"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:hint="Search"
+
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:imeOptions="actionDone"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:singleLine="true"
+
+                    android:inputType="textNoSuggestions|textCapWords"
+                    android:textColorHint="@color/black_opacity_text"
+                    android:textColor="@color/black_opacity_text"
+                    android:textSize="@dimen/_15sdp"
+                    />
+                <!--android:drawableLeft="@drawable/searchgrey"-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/micLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/searchgrey"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/innventoryRV"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

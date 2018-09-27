@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/priceLL"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            android:id="@+id/nameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="left"
+            android:layout_weight="1.5"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            android:id="@+id/priceTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+          
+            android:gravity="left"
+            android:layout_weight="0.5"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+
+</LinearLayout>
