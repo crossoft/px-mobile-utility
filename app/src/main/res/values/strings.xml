@@ -4,7 +4,7 @@
 
     <!--String Name -->
 
-    <string name="create_account" tools:ignore="StringEscaping">Don\'t have an account? Create one</string>
+    <string name="create_account" tools:ignore="StringEscaping">Don't have an account? Create one</string>
     <string name="please_enter_email">Please enter Email</string>
     <string name="logg_in">Log In</string>
     <string name="metrics">Metrics</string>

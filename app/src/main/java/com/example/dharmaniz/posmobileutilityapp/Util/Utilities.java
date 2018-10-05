@@ -28,8 +28,6 @@ public class Utilities {
         pdialog.setContentView(R.layout.dialog_progess);
         pdialog.setCanceledOnTouchOutside(false);
         ProgressBar circlePB = (ProgressBar) pdialog.findViewById(R.id.circlePB);
-
-
         pdialog.show();
     }
     public static void hideProgressDialog() {

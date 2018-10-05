@@ -94,8 +94,6 @@ public class ShowSaleProductRecipedetailActivity extends PostMobileBaseActivity 
             public void onClick(View view) {
                 if (!Utilities.isNetworkAvailable(mActivity)) {
                    showAlertDialog(mActivity, "", "No Internet Connection, Please connect the valid internet Connection");
-
-
                 }else {
                     if (mArray.size() != 0) {
                         System.out.println("OutPut" + builder.toString());
@@ -107,7 +105,6 @@ public class ShowSaleProductRecipedetailActivity extends PostMobileBaseActivity 
                         startActivity(sendIntent);
                     }
                 }
-
             }
         });
         backRL.setOnClickListener(new View.OnClickListener() {
