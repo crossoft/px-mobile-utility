@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorPrimary"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -11,14 +11,14 @@
         android:background="@color/colorPrimary">
 
 
-        <com.example.dharmaniz.posmobileutilityapp.fonts.MediumCustomTextView
-            android:textColor="@color/white"
-            android:text="Inventory"
-            android:textSize="@dimen/_16sdp"
-            android:layout_centerInParent="true"
+        <com.pos.fonts.MediumCustomTextView
+            android:id="@+id/tittleTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tittleTV"/>
+            android:layout_centerInParent="true"
+            android:text="Inventory"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
 
         <RelativeLayout
             android:id="@+id/backRL"
@@ -40,7 +40,6 @@
 
 
         <TextView
-            android:visibility="gone"
             android:id="@+id/searchTV"
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_20sdp"
@@ -50,7 +49,8 @@
             android:background="@drawable/bg_btn"
             android:gravity="center"
             android:text="Search"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:visibility="gone" />
 
     </RelativeLayout>
 
@@ -59,101 +59,78 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!--Search Layout-->
         <LinearLayout
-
             android:id="@+id/mainNormalLL"
-            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_margin="@dimen/_7sdp"
             android:background="@drawable/search_fill_box"
+            android:orientation="horizontal"
+            android:visibility="gone"
             android:weightSum="2">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
-                android:gravity="center"
-                android:layout_weight=".4"
                 android:layout_gravity="center"
+                android:layout_weight=".4"
+                android:gravity="center"
                 android:orientation="horizontal">
-
-                <!--<LinearLayout-->
-                <!--android:visibility="gone"-->
-                <!--android:id="@+id/deleteLL"-->
-                <!--android:layout_width="@dimen/size_60_dp"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:layout_alignParentRight="true"-->
-                <!--android:layout_centerInParent="true">-->
-                <!--<TextView-->
-                <!--android:id="@+id/"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:gravity="center"-->
-                <!--android:textColor="@color/colorPrimaryDark"-->
-                <!--android:layout_marginRight="@dimen/size_10_dp"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:text="DELETE"/>-->
-
-                <!--</LinearLayout>-->
-
-
 
                 <EditText
                     android:id="@+id/editSearchET"
-                    android:padding="@dimen/_4sdp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_centerInParent="true"
-                    android:background="@android:color/transparent"
-                    android:hint="Search By Name"
-
-                    android:drawablePadding="@dimen/_5sdp"
-                    android:imeOptions="actionDone"
                     android:layout_marginLeft="@dimen/_5sdp"
-                    android:singleLine="true"
-
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="Search By Name"
+                    android:imeOptions="actionDone"
                     android:inputType="textNoSuggestions|textCapWords"
-                    android:textColorHint="@color/black_opacity_text"
+                    android:padding="@dimen/_4sdp"
+                    android:singleLine="true"
                     android:textColor="@color/black_opacity_text"
-                    android:textSize="@dimen/_15sdp"
-                    />
-                <!--android:drawableLeft="@drawable/searchgrey"-->
+                    android:textColorHint="@color/black_opacity_text"
+                    android:textSize="@dimen/_15sdp" />
             </RelativeLayout>
 
             <LinearLayout
                 android:id="@+id/micLL"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.6"
                 android:layout_centerInParent="true"
+                android:layout_weight="1.6"
                 android:gravity="center">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/searchgrey"/>
+                    android:src="@drawable/searchgrey" />
 
             </LinearLayout>
 
         </LinearLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:background="@color/colorPrimary"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:orientation="vertical">
+
                 <LinearLayout
 
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_90sdp"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -166,16 +143,17 @@
 
                             <ImageView
                                 android:id="@+id/image"
-                                android:layout_centerInParent="true"
                                 android:layout_width="@dimen/_40sdp"
                                 android:layout_height="@dimen/_40sdp"
-                                android:src="@drawable/setup_icon"/>
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/setup_icon" />
+
                             <TextView
 
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/_38sdp"
-                                android:layout_marginTop="@dimen/_25sdp"
                                 android:layout_below="@+id/image"
+                                android:layout_marginTop="@dimen/_25sdp"
                                 android:gravity="center"
                                 android:text="Setup"
                                 android:textColor="@color/white"
@@ -184,10 +162,12 @@
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
+
                         <RelativeLayout
                             android:id="@+id/inventoryquantityTV"
                             android:layout_width="wrap_content"
@@ -195,27 +175,28 @@
 
                             <ImageView
                                 android:id="@+id/image1"
-                                android:layout_centerInParent="true"
                                 android:layout_width="@dimen/_40sdp"
                                 android:layout_height="@dimen/_40sdp"
-                                android:src="@drawable/current_qty_icon"/>
-                            <TextView
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/current_qty_icon" />
 
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/_38sdp"
-
-                                android:layout_marginTop="@dimen/_25sdp"
                                 android:layout_below="@+id/image1"
+                                android:layout_marginTop="@dimen/_25sdp"
                                 android:gravity="center"
                                 android:text="Current Qty"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/_14sdp" />
                         </RelativeLayout>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
+
                         <RelativeLayout
                             android:id="@+id/reorderTV"
                             android:layout_width="wrap_content"
@@ -223,17 +204,16 @@
 
                             <ImageView
                                 android:id="@+id/image2"
-                                android:layout_centerInParent="true"
                                 android:layout_width="@dimen/_40sdp"
                                 android:layout_height="@dimen/_40sdp"
-                                android:src="@drawable/reorder_list_icon"/>
-                            <TextView
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/reorder_list_icon" />
 
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-
-                                android:layout_marginTop="@dimen/_25sdp"
                                 android:layout_below="@+id/image2"
+                                android:layout_marginTop="@dimen/_25sdp"
                                 android:gravity="center"
                                 android:text="Reorder List"
                                 android:textColor="@color/white"
@@ -244,11 +224,12 @@
 
 
                 </LinearLayout>
-                <LinearLayout
 
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_90sdp"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -261,15 +242,16 @@
 
                             <ImageView
                                 android:id="@+id/image4"
-                                android:layout_centerInParent="true"
                                 android:layout_width="@dimen/_40sdp"
                                 android:layout_height="@dimen/_40sdp"
-                                android:src="@drawable/instruction_icon"/>
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/instruction_icon" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/_38sdp"
-                                android:layout_marginTop="@dimen/_25sdp"
                                 android:layout_below="@+id/image4"
+                                android:layout_marginTop="@dimen/_25sdp"
                                 android:gravity="center"
                                 android:text="Instructions"
                                 android:textColor="@color/white"
@@ -278,10 +260,12 @@
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
+
                         <RelativeLayout
                             android:id="@+id/locationTV"
                             android:layout_width="wrap_content"
@@ -289,103 +273,29 @@
 
                             <ImageView
                                 android:id="@+id/image6"
-                                android:layout_centerInParent="true"
                                 android:layout_width="@dimen/_40sdp"
                                 android:layout_height="@dimen/_40sdp"
-                                android:src="@drawable/location_icon"/>
-                            <TextView
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/location_icon" />
 
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/_38sdp"
-
-                                android:layout_marginTop="@dimen/_25sdp"
                                 android:layout_below="@+id/image6"
+                                android:layout_marginTop="@dimen/_25sdp"
                                 android:gravity="center"
                                 android:text="Locations"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/_14sdp" />
                         </RelativeLayout>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-
-
-                    </LinearLayout>
-
-
+                        android:layout_weight="1"></LinearLayout>
                 </LinearLayout>
 
-                <!--<TextView-->
-                   <!---->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="@dimen/_38sdp"-->
-                    <!--android:layout_marginBottom="@dimen/_5sdp"-->
-                    <!--android:layout_marginLeft="@dimen/_20sdp"-->
-                    <!--android:layout_marginRight="@dimen/_20sdp"-->
-                    <!--android:layout_marginTop="@dimen/_5sdp"-->
-                    <!--android:background="@drawable/bg_btn"-->
-                    <!--android:gravity="center"-->
-                    <!--android:text="Setup"-->
-                    <!--android:textColor="@color/white"-->
-                    <!--android:textSize="@dimen/_14sdp" />-->
-                <!--<TextView-->
-                   <!---->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="@dimen/_38sdp"-->
-                    <!--android:layout_marginBottom="@dimen/_5sdp"-->
-                    <!--android:layout_marginLeft="@dimen/_20sdp"-->
-                    <!--android:layout_marginRight="@dimen/_20sdp"-->
-                    <!--android:layout_marginTop="@dimen/_5sdp"-->
-                    <!--android:background="@drawable/bg_btn"-->
-                    <!--android:gravity="center"-->
-                    <!--android:text="Current Qty"-->
-                    <!--android:textColor="@color/white"-->
-                    <!--android:textSize="@dimen/_14sdp" />-->
-                <!--<TextView-->
-                  <!---->
-
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="@dimen/_38sdp"-->
-                    <!--android:layout_marginBottom="@dimen/_5sdp"-->
-                    <!--android:layout_marginLeft="@dimen/_20sdp"-->
-                    <!--android:layout_marginRight="@dimen/_20sdp"-->
-                    <!--android:layout_marginTop="@dimen/_5sdp"-->
-                    <!--android:background="@drawable/bg_btn"-->
-                    <!--android:gravity="center"-->
-                    <!--android:text="Reorder List"-->
-                    <!--android:textColor="@color/white"-->
-                    <!--android:textSize="@dimen/_14sdp" />-->
-                <!--<TextView-->
-                   <!---->
-
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="@dimen/_38sdp"-->
-                    <!--android:layout_marginBottom="@dimen/_5sdp"-->
-                    <!--android:layout_marginLeft="@dimen/_20sdp"-->
-                    <!--android:layout_marginRight="@dimen/_20sdp"-->
-                    <!--android:layout_marginTop="@dimen/_5sdp"-->
-                    <!--android:background="@drawable/bg_btn"-->
-                    <!--android:gravity="center"-->
-                    <!--android:text="Instructions"-->
-                    <!--android:textColor="@color/white"-->
-                    <!--android:textSize="@dimen/_14sdp" />-->
-                <!--<TextView-->
-                    <!--android:id="@+id/locationTV"-->
-
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="@dimen/_38sdp"-->
-                    <!--android:layout_marginBottom="@dimen/_30sdp"-->
-                    <!--android:layout_marginLeft="@dimen/_20sdp"-->
-                    <!--android:layout_marginRight="@dimen/_20sdp"-->
-                    <!--android:layout_marginTop="@dimen/_5sdp"-->
-                    <!--android:background="@drawable/bg_btn"-->
-                    <!--android:gravity="center"-->
-                    <!--android:text="Location"-->
-                    <!--android:textColor="@color/white"-->
-                    <!--android:textSize="@dimen/_14sdp" />-->
             </LinearLayout>
 
         </RelativeLayout>

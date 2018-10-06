@@ -9,276 +9,227 @@
     app:ignore="NamespaceTypo">
 
 
-        <RelativeLayout
-            android:id="@+id/layoutItemRL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
+    <RelativeLayout
+        android:id="@+id/layoutItemRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
 
+                <LinearLayout
+                    android:id="@+id/NameLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
 
-                android:orientation="vertical">
-                <!--android:background="@drawable/edit_backgourd"-->
+                    <com.pos.fonts.RegularCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Product"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/productNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="productName"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/calculatedQtyLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/calculatedQtyTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Calculated Qty"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/calculatedQtyNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="calculatedQty"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reorderQtyLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/reorderQtyTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Reorder Qty"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/reorderQtyNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Reorder Qty"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/minLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/minTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Min"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/minNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Min"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/maxLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/maxTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Max"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/maxNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Max"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vendorLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/vendorTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Vendor"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <com.pos.fonts.RegularCustomTextView
+                        android:id="@+id/vendorNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Vendor"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/arrowNextRL"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp">
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
 
-
-                    <LinearLayout
-                        android:id="@+id/NameLL"
-                        android:visibility="gone"
-                        android:layout_width="match_parent"
+                    <com.pos.fonts.BoldCustomTextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="@dimen/_10sdp">
+                        android:layout_weight="9"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
 
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="left"
-
-                            android:text="Product"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/productNameTV"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="right"
-
-                            android:text="productName"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/calculatedQtyLL"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/_10sdp">
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/calculatedQtyTv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="left"
-
-                            android:text="Calculated Qty"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/calculatedQtyNameTV"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="right"
-
-                            android:text="calculatedQty"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/reorderQtyLL"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/_10sdp">
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/reorderQtyTv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="left"
-
-                            android:text="Reorder Qty"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/reorderQtyNameTV"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="right"
-
-                            android:text="Reorder Qty"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/minLL"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/_10sdp">
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/minTv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="left"
-
-                            android:text="Min"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/minNameTV"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="right"
-
-                            android:text="Min"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/maxLL"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/_10sdp">
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/maxTv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="left"
-
-                            android:text="Max"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/maxNameTV"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="right"
-
-                            android:text="Max"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/vendorLL"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/_10sdp">
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/vendorTv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="left"
-
-                            android:text="Vendor"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-                            android:id="@+id/vendorNameTV"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_weight="1"
-
-                            android:gravity="right"
-
-                            android:text="Vendor"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_16sdp" />
-                    </LinearLayout>
-
+                    <ImageView
+                        android:id="@+id/arrowNextIV"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/nameTv"
+                        android:layout_weight="1"
+                        android:src="@drawable/arrow_next" />
                 </LinearLayout>
 
-                <RelativeLayout
-                    android:id="@+id/arrowNextRL"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_60sdp"
-                    android:orientation="horizontal"
-
-                    android:padding="5dp"
-                    android:visibility="gone">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:orientation="horizontal">
-
-                        <com.example.dharmaniz.posmobileutilityapp.fonts.BoldCustomTextView
-                            android:id="@+id/nameTv"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@android:color/transparent"
-                            android:gravity="left"
-                            android:layout_weight="9"
-                            android:text=""
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_14sdp" />
-                        <ImageView
-                            android:layout_toRightOf="@+id/nameTv"
-                            android:id="@+id/arrowNextIV"
-                            android:layout_width="@dimen/_15sdp"
-                            android:layout_weight="1"
-                            android:layout_height="@dimen/_15sdp"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="@dimen/_10sdp"
-                            android:src="@drawable/arrow_next" />
-                    </LinearLayout>
-
-
-                </RelativeLayout>
-
-
-            </LinearLayout>
-        </RelativeLayout>
-
-
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>
 
-    <!--Product         {{name}}-->
-    <!--Calculated Qty  {{calculatedQty}}-->
-    <!--Reorder Qty     {{reorderQty}}-->
-    <!--Min             {{minLevel}}-->
-    <!--Max             {{maxLevel}}-->
-    <!--Vendor          {{vendorName}}-->

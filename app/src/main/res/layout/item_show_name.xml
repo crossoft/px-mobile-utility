@@ -1,40 +1,42 @@
-<RelativeLayout android:id="@+id/arrowNextRL"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/arrowNextRL"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
     android:background="@color/colorPrimaryDark"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_centerInParent="true"
-        android:padding="@dimen/_15sdp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp">
 
-        <com.example.dharmaniz.posmobileutilityapp.fonts.BoldCustomTextView
+        <com.pos.fonts.BoldCustomTextView
             android:id="@+id/nameTv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="9"
             android:background="@android:color/transparent"
             android:gravity="left"
-            android:layout_weight="9"
             android:text=""
             android:textColor="@color/black"
             android:textSize="@dimen/_14sdp" />
+
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent">
-        <ImageView
-            android:layout_toRightOf="@+id/nameTv"
-            android:id="@+id/arrowNextIV"
-            android:layout_gravity="center|right"
-            android:layout_width="@dimen/_15sdp"
-            android:layout_height="@dimen/_15sdp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/_10sdp"
-            android:src="@drawable/arrow_next" />
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/arrowNextIV"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/nameTv"
+                android:src="@drawable/arrow_next" />
         </LinearLayout>
     </LinearLayout>
 

@@ -11,7 +11,7 @@
         android:background="@color/colorPrimary">
 
 
-        <com.example.dharmaniz.posmobileutilityapp.fonts.MediumCustomTextView
+        <com.pos.fonts.MediumCustomTextView
             android:id="@+id/tittleTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,21 +60,18 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
         android:orientation="vertical">
 
-        <!--Search Layout-->
         <LinearLayout
-
             android:id="@+id/mainNormalLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_7sdp"
             android:background="@drawable/search_fill_box"
             android:orientation="horizontal"
-
             android:weightSum="2">
 
             <RelativeLayout
@@ -94,17 +91,14 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:background="@android:color/transparent"
                     android:drawablePadding="@dimen/_5sdp"
-
                     android:hint="Search"
                     android:imeOptions="actionDone"
                     android:inputType="textNoSuggestions|textCapWords"
                     android:padding="@dimen/_4sdp"
-
                     android:singleLine="true"
                     android:textColor="@color/black_opacity_text"
                     android:textColorHint="@color/black_opacity_text"
                     android:textSize="@dimen/_15sdp" />
-                <!--android:drawableLeft="@drawable/searchgrey"-->
             </RelativeLayout>
 
             <LinearLayout
@@ -127,9 +121,9 @@
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/innventoryRV"
-            android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            android:layout_height="match_parent"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
 

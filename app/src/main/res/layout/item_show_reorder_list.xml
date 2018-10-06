@@ -21,22 +21,21 @@
         <LinearLayout
             android:id="@+id/nameLL"
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
             android:background="@color/gray_bg"
             android:padding="@dimen/_10sdp">
-            <!--android:id="@+id/calculatedQtyNameTV"-->
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
-android:visibility="gone"
+
+            <com.pos.fonts.RegularCustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="left"
                 android:text="Product Name"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_16sdp"
+                android:visibility="gone" />
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/nameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +55,7 @@ android:visibility="gone"
             android:layout_height="wrap_content"
             android:padding="@dimen/_10sdp">
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/calculatedQtyTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,7 +65,7 @@ android:visibility="gone"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/calculatedQtyNameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,34 +78,27 @@ android:visibility="gone"
 
         <LinearLayout
             android:id="@+id/reorderQtyLL"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/gray_Blue"
             android:padding="@dimen/_10sdp">
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/reorderQtyTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
-
                 android:gravity="left"
-
                 android:text="Reorder"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/reorderQtyNameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
-
                 android:gravity="right"
-
                 android:text="Reorder Qty"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
@@ -118,28 +110,22 @@ android:visibility="gone"
             android:layout_height="wrap_content"
             android:padding="@dimen/_10sdp">
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/minTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
-
                 android:gravity="left"
-
                 android:text="Min"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/minNameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
-
                 android:gravity="right"
-
                 android:text="Min"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
@@ -147,34 +133,27 @@ android:visibility="gone"
 
         <LinearLayout
             android:id="@+id/maxLL"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/gray_Blue"
             android:padding="@dimen/_10sdp">
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/maxTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
-
                 android:gravity="left"
-
                 android:text="Max"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/maxNameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
-
                 android:gravity="right"
-
                 android:text="Max"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
@@ -187,36 +166,27 @@ android:visibility="gone"
             android:padding="@dimen/_10sdp"
             android:visibility="gone">
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/vendorTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
-
                 android:gravity="left"
-
                 android:text="Vendor"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
 
-            <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+            <com.pos.fonts.RegularCustomTextView
                 android:id="@+id/vendorNameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
-
                 android:gravity="right"
-
                 android:text="Vendor"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp" />
         </LinearLayout>
 
     </LinearLayout>
-    <!--<View android:layout_width="match_parent"-->
-    <!--android:background="@color/black"-->
-    <!--android:layout_marginTop="@dimen/_10sdp"-->
-    <!--android:layout_height="1dp"/>-->
+
 </LinearLayout>

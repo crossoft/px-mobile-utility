@@ -18,27 +18,22 @@
             android:layout_marginLeft="@dimen/_50sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:orientation="vertical">
-            <!--android:background="@drawable/bg_back_text"-->
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="@dimen/_90sdp">
 
                 <RelativeLayout
                     android:id="@+id/emailRV"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_40sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-
-                    >
+                    android:layout_marginLeft="@dimen/_10sdp">
 
                     <ImageView
-
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
                         android:layout_centerInParent="true"
-
                         android:src="@drawable/user_icon" />
 
                 </RelativeLayout>
@@ -57,10 +52,8 @@
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
                     android:textSize="@dimen/_13sdp" />
-
-
             </RelativeLayout>
-            <!--android:background="@drawable/bg_back_text"-->
+
             <View
                 android:id="@+id/view1"
                 android:layout_width="match_parent"
@@ -120,10 +113,10 @@
                 android:id="@+id/logingTV"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_38sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:background="@drawable/bg_btn"
                 android:gravity="center"
                 android:text="Log In"

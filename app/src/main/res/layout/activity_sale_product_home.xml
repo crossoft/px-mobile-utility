@@ -13,7 +13,7 @@
         android:background="@color/colorPrimary">
 
 
-        <com.example.dharmaniz.posmobileutilityapp.fonts.MediumCustomTextView
+        <com.pos.fonts.MediumCustomTextView
             android:id="@+id/tittleTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,9 +68,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!--Search Layout-->
         <LinearLayout
-
             android:id="@+id/mainNormalLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,17 +95,14 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:background="@android:color/transparent"
                     android:drawablePadding="@dimen/_5sdp"
-
                     android:hint="Search..."
                     android:imeOptions="actionDone"
                     android:inputType="textNoSuggestions|textCapWords"
                     android:padding="@dimen/_4sdp"
-
                     android:singleLine="true"
                     android:textColor="@color/black_opacity_text"
                     android:textColorHint="@color/black_opacity_text"
                     android:textSize="@dimen/_15sdp" />
-                <!--android:drawableLeft="@drawable/searchgrey"-->
             </RelativeLayout>
 
             <LinearLayout
@@ -136,12 +131,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
                 android:orientation="vertical">
 
                 <LinearLayout
-
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_90sdp"
                     android:orientation="horizontal">
@@ -164,7 +158,6 @@
                                 android:src="@drawable/info_icon" />
 
                             <TextView
-
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/_38sdp"
                                 android:layout_below="@+id/image4"
@@ -196,10 +189,8 @@
                                 android:src="@drawable/recipe_icon" />
 
                             <TextView
-
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/_38sdp"
-
                                 android:layout_below="@+id/image6"
                                 android:layout_marginTop="@dimen/_25sdp"
                                 android:gravity="center"
@@ -212,40 +203,9 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-
-                    </LinearLayout>
-
+                        android:layout_weight="1"></LinearLayout>
 
                 </LinearLayout>
-                <!--<TextView-->
-                <!---->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="@dimen/_38sdp"-->
-                <!--android:layout_marginBottom="@dimen/_5sdp"-->
-                <!--android:layout_marginLeft="@dimen/_20sdp"-->
-                <!--android:layout_marginRight="@dimen/_20sdp"-->
-                <!--android:layout_marginTop="@dimen/_5sdp"-->
-                <!--android:background="@drawable/bg_btn"-->
-                <!--android:gravity="center"-->
-                <!--android:text="Information"-->
-                <!--android:textColor="@color/white"-->
-                <!--android:textSize="@dimen/_14sdp" />-->
-                <!--<TextView-->
-                <!---->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="@dimen/_38sdp"-->
-                <!--android:layout_marginBottom="@dimen/_5sdp"-->
-                <!--android:layout_marginLeft="@dimen/_20sdp"-->
-                <!--android:layout_marginRight="@dimen/_20sdp"-->
-                <!--android:layout_marginTop="@dimen/_5sdp"-->
-                <!--android:background="@drawable/bg_btn"-->
-                <!--android:gravity="center"-->
-                <!--android:text="Recipe"-->
-                <!--android:textColor="@color/white"-->
-                <!--android:textSize="@dimen/_14sdp" />-->
-
             </LinearLayout>
 
         </RelativeLayout>

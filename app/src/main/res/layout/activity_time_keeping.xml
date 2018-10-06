@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorPrimary"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:background="@color/colorPrimary">
 
-
-        <com.example.dharmaniz.posmobileutilityapp.fonts.MediumCustomTextView
-            android:textColor="@color/white"
-            android:text="Time Keeping "
-            android:textSize="@dimen/_16sdp"
-            android:layout_centerInParent="true"
+        <com.pos.fonts.MediumCustomTextView
+            android:id="@+id/tittleTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tittleTV"/>
+            android:layout_centerInParent="true"
+            android:text="Time Keeping "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
 
         <RelativeLayout
             android:id="@+id/backRL"
@@ -40,9 +39,9 @@
 
         <RelativeLayout
             android:id="@+id/homeRL"
-            android:layout_alignParentRight="true"
             android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_40sdp">
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true">
 
             <ImageView
                 android:id="@+id/homeTV"

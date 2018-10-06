@@ -6,36 +6,38 @@
 
     <LinearLayout
         android:id="@+id/priceLL"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.pos.fonts.RegularCustomTextView
             android:id="@+id/nameTV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="1.5"
             android:background="@color/gray_bg"
             android:gravity="left"
-            android:layout_weight="1.5"
             android:padding="@dimen/_7sdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />
-        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+
+        <com.pos.fonts.RegularCustomTextView
             android:id="@+id/priceTV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="0.5"
             android:background="@color/gray_bg"
             android:gravity="left"
-            android:layout_weight="0.5"
             android:padding="@dimen/_7sdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />
     </LinearLayout>
 
 
-    <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+    <com.pos.fonts.RegularCustomTextView
         android:id="@+id/dataTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,7 +48,7 @@
         android:textColor="@color/black"
         android:textSize="@dimen/_16sdp" />
 
-    <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+    <com.pos.fonts.RegularCustomTextView
         android:id="@+id/inventoryNameTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,34 +58,31 @@
         android:textColor="@color/black"
         android:textSize="@dimen/_16sdp" />
 
-    <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+    <com.pos.fonts.RegularCustomTextView
         android:id="@+id/qtyTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-
         android:gravity="left"
         android:padding="@dimen/_7sdp"
         android:textColor="@color/black"
         android:textSize="@dimen/_16sdp" />
 
-    <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+    <com.pos.fonts.RegularCustomTextView
         android:id="@+id/unitNameTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-
         android:gravity="left"
         android:padding="@dimen/_7sdp"
         android:textColor="@color/black"
         android:textSize="@dimen/_16sdp" />
 
-    <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+    <com.pos.fonts.RegularCustomTextView
         android:id="@+id/instructionsTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-
         android:gravity="left"
         android:padding="@dimen/_7sdp"
         android:textColor="@color/black"

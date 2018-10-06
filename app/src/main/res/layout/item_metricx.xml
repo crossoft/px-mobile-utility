@@ -9,28 +9,22 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/_10sdp">
 
-        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+        <com.pos.fonts.RegularCustomTextView
             android:id="@+id/metricNameTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_weight="1"
-
             android:gravity="left"
-
             android:text=""
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />
 
-        <com.example.dharmaniz.posmobileutilityapp.fonts.RegularCustomTextView
+        <com.pos.fonts.RegularCustomTextView
             android:id="@+id/matrixValueTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_weight="1"
-
             android:gravity="right"
-
             android:text=""
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />

@@ -11,7 +11,7 @@
         android:background="@color/colorPrimary">
 
 
-        <com.example.dharmaniz.posmobileutilityapp.fonts.MediumCustomTextView
+        <com.pos.fonts.MediumCustomTextView
             android:id="@+id/tittleTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,9 +66,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!--Search Layout-->
         <LinearLayout
-
             android:id="@+id/mainNormalLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +101,7 @@
                     android:textColor="@color/black_opacity_text"
                     android:textColorHint="@color/black_opacity_text"
                     android:textSize="@dimen/_15sdp" />
-                <!--android:drawableLeft="@drawable/searchgrey"-->
+
             </RelativeLayout>
 
             <LinearLayout
@@ -122,17 +120,13 @@
             </LinearLayout>
 
         </LinearLayout>
-        <!--<android.support.v4.widget.SwipeRefreshLayout-->
-        <!--android:id="@+id/swipeToRefresh"-->
-        <!--android:layout_below="@+id/tobBAr"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content">-->
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/innventoryRV"
-            android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
-        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+            android:layout_height="match_parent"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
     </LinearLayout>
 
 
